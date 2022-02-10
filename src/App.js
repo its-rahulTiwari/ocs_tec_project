@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+// import {useState , useEffect} from 'react';
 import './App.css';
+import Navbar from './Navbar';
+import Maincontainer from './Maincontainer';
+// import {Switch , Route} from "react-router-dom";
+
 
 function App() {
+
+  // const [searchResults , setSearchResults] = useState([]);
+  // const [searchText , setSearchText] = useState('');
+
+  // useEffect ( () => {
+  //   fetch(`https://github.com/${searchText}`)
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     console.log(data)
+  //     setSearchResults(data.results)
+  //   })
+  // }, [searchText])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar className="Navbar"/>
+        <Maincontainer/>
     </div>
   );
 }
